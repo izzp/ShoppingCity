@@ -1,0 +1,121 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Default.Master" AutoEventWireup="true" CodeBehind="UserLogin.aspx.cs" Inherits="ShoppingCity.Login" Theme="default" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style1 {
+            width: 500px;
+            /*height:300px;*/
+            margin: 0 auto;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .auto-style2 {
+            width: 264px;
+            font-size: 18px;
+        }
+
+        td {
+            height: 40px;
+        }
+
+        .conts {
+            width: 1000px;
+            height: 800px;
+            position: relative;
+            background-color: white;
+            top: -500px;
+            opacity: 0.7; /*透明度*/
+        }
+
+        .tbbor {
+            width: 300px;
+            height: 300px;
+            background-color: skyblue;
+            margin: 0 auto;
+            top: 200px;
+            position: relative;
+            border-radius:20px;
+        }
+        .txtcont {
+        width:100%;
+        height:50px;
+        border:solid 0.5px;
+        text-align:center;
+        border-radius:15px;
+        }
+        .fonts {
+            width:30%;
+            text-align:center;
+            position:relative;
+            float:left;
+            font-size:18px;
+        }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="conts">
+        <div class="tbbor">
+            <div style="font-size:15px;height:30px; text-align:center; border-bottom:solid 1px;">
+                【会员登录】
+            </div>
+            <div class="txtcont">
+                <span class="fonts">用户名：</span>
+                <asp:TextBox ID="txtUName" runat="server" Height="30" Width="200" />
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server"
+                        ControlToValidate="txtUName" ErrorMessage="用户名不能为空！" Text="*" />
+            </div>
+            <div class="txtcont">
+                <span class="fonts">密码：</span>
+                <asp:TextBox ID="txtUPwd" runat="server" TextMode="Password" Width="200" Height="30" />
+                <asp:RequiredFieldValidator ID="reqUPwd" runat="server"
+                        ControlToValidate="txtUPwd" ErrorMessage="密码不能为空！" Text="*" />
+            </div>
+            <div class="txtcont">
+                <asp:CheckBox ID="cbState" runat="server" Text="两周内不用登录" Height="30px" Width="150px" />
+            </div>
+            <div class="txtcont">
+                <asp:Button ID="btnLogin" runat="server" Text="登  录" OnClick="btnLogin_Click" />
+                <asp:Button ID="btnCancel" runat="server" Text="取  消" />
+            </div>
+        </div>
+        <%--<table class="auto-style1">
+            <tr>
+                <td colspan="2">【会员登录】<hr />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <asp:Label ID="lblUName" runat="server" Text="用户名：" Style="text-align: right" />
+                </td>
+                <td>
+                    <asp:TextBox ID="txtUName" runat="server" Height="30" Width="200" />
+                    <asp:RequiredFieldValidator ID="reqUName" runat="server"
+                        ControlToValidate="txtUName" ErrorMessage="用户名不能为空！" Text="*" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <asp:Label ID="lblUPwd" runat="server" Text="密码：" />
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBox2" runat="server" TextMode="Password" Width="200" Height="30" />
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server"
+                        ControlToValidate="txtUPwd" ErrorMessage="密码不能为空！" Text="*" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <asp:CheckBox ID="cbState" runat="server" Text="两周内不用登录" Height="30px" Width="150px" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <asp:Button ID="btnLogin" runat="server" Text="登  录" OnClick="btnLogin_Click" />
+                    <asp:Button ID="btnCancel" runat="server" Text="取  消" /></td>
+            </tr>
+        </table>--%>
+    </div>
+
+
+</asp:Content>

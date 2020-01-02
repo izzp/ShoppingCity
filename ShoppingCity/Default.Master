@@ -1,0 +1,150 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="ShoppingCity.Default1" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>B2C网上商城</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link type="text/css" rel="stylesheet" href="css/glyphicons.css" />
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/index.css" />
+    <script type="text/javascript" src="../JS/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../JS/pictures.js"></script>
+    <style type="text/css">
+        .imagess {
+            width: 100%;
+            height: 356px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="header">
+            <div id="top-nav">
+                <div class="wrapper">
+                    <div id="search-box">
+                    </div>
+                    <div id="top-menu">
+                        <ul>
+
+                            <li class="btn login">
+                                <a href="../UserManager/UserLogin.aspx">
+                                    <span class="glyphicon glyphicon-lock"></span>
+                                    登录
+                                </a>
+                            </li>
+                            <li class="btn register">
+                                <a href="../UserManager/UserRegister.aspx">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    注册
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="nav">
+                <div class="wrapper">
+                    <h1 class="logo">B2C网上商城</h1>
+                    <ul class="nav-menu">
+                        <li class="selected"><a href="../GoodsManager/GoodsList.aspx">首页</a></li>
+                        <li><a href="../ShoppingCarManage.aspx">购物车</a></li>
+                        <li class="menu-btn">
+                            <a href="#">商城 <span class="arrow"></span></a>
+                            <ul class="sub-menu">
+                                <li><a href="#">商品类别</a></li>
+                                <li><a href="#">商品详情</a></li>
+                                <li><a href="../ShoppingCarManage.aspx">购物车</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-btn"><a href="https://www.mezzp.com">博客 <span class="arrow"></span></a>
+                            <ul class="sub-menu">
+                                <li><a href="zhaozhipeng.com">Blog Posts</a></li>
+                                <li><a href="www.mezzp.com">Blog Timeline</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../MessageManage/BBSNoteList.aspx">留言板</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="banner">
+            <div class="wrapper1" style="position: relative;">
+                <asp:Image ID="myimgg" CssClass="imagess" runat="server" ImageUrl="~/images/3.png" />
+
+            </div>
+        </div>
+        <div id="awesome">
+            <span id="text-primary">Awesome</span>
+            <span id="text-features">Features</span>
+            <span id="hidden-phone">Lovely headline here</span>
+        </div>
+        <div id="content" class="wrapper2">
+            <div class="contents">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="wrapper">
+                <div class="foot-top">
+                    <div class="quick-links left">
+                        <h4>链接</h4>
+                        <ul>
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>pricing</a></li>
+                            <li><a href="https://www.mezzp.com">Blog</a></li>
+                            <li><a href="../MessageManage/BBSNoteList.aspx">留言板</a></li>
+                        </ul>
+                    </div>
+                    <div class="about left">
+                        <h4>关于</h4>
+                        <p>
+                            学院地址：石家庄市红旗大街356号<br />
+                            邮政编码：050091
+                            <br />
+                            联系我们：0311-83812051 招生咨询0311-86263563        Copyright 2019-2019
+                            <br />
+                            版权所有：河北师范大学附属民族学院
+                        </p>
+                    </div>
+                    <div class="out-blog left">
+                        <h4>OUR BLOG</h4>
+                        <ul>
+                            <li><a>这个商城好厉害 ！快来买！</a></li>
+                            <li><a>这个商城好厉害 ！快来买！</a></li>
+                            <li><a>这个商城好厉害 ！快来买！</a></li>
+                            <li><a>这个商城好厉害 ！快来买！</a></li>
+                            <li><a>这个商城好厉害 ！快来买！</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="contact right">
+                        <h4>联系方式</h4>
+                        <ul>
+                            <li><span class="glyphicon glyphicon-phone"></span>13333333333</li>
+                            <li><span class="glyphicon glyphicon-envelope"></span>i@mezzp.com</li>
+                        </ul>
+                    </div>
+                    <div class="social right">
+                        <a href="../AdminsManager/AdminLogin.aspx">
+                            <h4>后台管理登录</h4>
+                        <p>&nbsp;</p>
+                        <asp:Button ID="Button1" runat="server" BackColor="Black" BorderStyle="None" ForeColor="White" Height="16px" OnClick="Button1_Click" Text="注销登录" Width="57px" />
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="copyright">
+                    <span>©2019</span>
+                    <a href="www.mezzp.com">www.mezzp.com</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+﻿body{margin: 0 auto;font-size:0.8em;text-align:center;}
+a{text-decoration:none;}   .noborder{border:0;}
+.content{width:90%;margin-left:50px;margin-top:10px;text-align:left; border-bottom-style:solid ; } 
+.tb_content{ border-width:1px; border-collapse:collapse; width:900px; text-align:center;}
+.tb{width:200px;height:300px;  }     
+.tdrow{height:30px;vertical-align:top;}
+.tdr{width:85px;padding:5px;text-align:left;}
+.tdl{width:105px;padding:5px;text-align:left;}
+.center{line-height:20px;padding:8px;border-width:0px;}
+.name{width:300px; line-height:20px;font-size:1.2em;padding:8px;text-align:left;border-width:0px;}
+.img{width:150px;height:200px;border:0;}
+.color{color:#ff4400;font-size:1.4em;}
+.hstyle{line-height:30px;text-align:center;background-color:#e2f2ff; }
+.fstyle{line-height:20px;text-align:center;background-color:#eeeeee; }
